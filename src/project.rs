@@ -37,7 +37,6 @@ impl RustAnalyzerProject {
         )?;
         Ok(())
     }
-
     /// If path contains .rs extension, add a crate to `rust-project.json`
     fn path_to_json(&mut self, path: PathBuf) -> Result<(), Box<dyn Error>> {
         if let Some(ext) = path.extension() {
